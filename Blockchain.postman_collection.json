@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "02c7b92d-3fdd-423d-84c5-c5b08bab6ee7",
+		"name": "Blockchain",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30062833"
+	},
+	"item": [
+		{
+			"name": "Blocos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/chain",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"chain"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Minerar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/mine",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"mine"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transação",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"sender\": \"fed3f52f31d1402085d024f8380b716c\",\r\n \"recipient\": \"someone else's address\",\r\n \"amount\": 5\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/transaction/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"transaction",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add novos nós",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"sender\": \"fed3f52f31d1402085d024f8380b716c\",\r\n \"recipient\": \"someone else's address\",\r\n \"amount\": 5\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/transaction/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"transaction",
+						"new"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
